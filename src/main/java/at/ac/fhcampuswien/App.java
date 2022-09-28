@@ -6,12 +6,22 @@ public class App {
 
     //todo Task 1
     public void sayHelloWorld(){
-        // input your solution here
+        System.out.println("Hello World!"); // input your solution here
     }
 
     //todo Task 2
     public void helloRobot(){
-        // input your solution here
+        System.out.println("0123456789012345678901");
+        System.out.println();
+        System.out.println("         __");
+        System.out.println(" _(\    |@@|");
+        System.out.println("(__/\__ \--/ __");
+        System.out.println("   \___|----|  |   __");
+        System.out.println("       \ }{ /\ )_ / _\ ");
+        System.out.println("       /\__/\ \__0 (__");
+        System.out.println("      (--/\--)    \__/");
+        System.out.println("      _)(  )(_");
+        System.out.println("     `___''___`");// input your solution here
     }
 
     //todo Task 3
