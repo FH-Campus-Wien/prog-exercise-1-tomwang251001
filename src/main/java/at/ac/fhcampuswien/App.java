@@ -56,13 +56,15 @@ public class App {
     //todo Task 6
     public void compareTwoNumbers(){
      Scanner scan = new Scanner(System.in);
-     int value1 = scan.nextInt();
-     int value2 = scan.nextInt();
-     if (value1 < value2)
-     System.out.println(value1 + " < " + value2);
-     else if (value1 > value2)
-         System.out.println(value1 + " > " + value2);
-     else System.out.println(value1 + " = " + value2);// input your solution here
+        System.out.print("n1: ");
+     int n1 = scan.nextInt();
+        System.out.print("n2: ");
+     int n2 = scan.nextInt();
+     if (n1 < n2)
+     System.out.println("n2 > n1");
+     else if (n1 > n2)
+         System.out.println("n1 > n2");
+     else System.out.println("n1 == n2");// input your solution here
     }
 
     //todo Task 7
