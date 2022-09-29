@@ -14,24 +14,29 @@ public class App {
         System.out.println("0123456789012345678901");
         System.out.println();
         System.out.println("         __");
-        System.out.println(" _(\    |@@|");
-        System.out.println("(__/\__ \--/ __");
-        System.out.println("   \___|----|  |   __");
-        System.out.println("       \ }{ /\ )_ / _\ ");
-        System.out.println("       /\__/\ \__0 (__");
-        System.out.println("      (--/\--)    \__/");
+        System.out.println(" _(\\    |@@|");
+        System.out.println("(__/\\__ \\--/ __");
+        System.out.println("   \\___|----|  |   __");
+        System.out.println("       \\ }{ /\\ )_ / _\\ ");
+        System.out.println("       /\\__/\\ \\__0 (__");
+        System.out.println("      (--/\\--)    \\__/");
         System.out.println("      _)(  )(_");
         System.out.println("     `___''___`");// input your solution here
     }
 
     //todo Task 3
     public void sumOfLiterals(){
-        // input your solution here
+     int a = 0xface;
+     int b = 'Z';
+     // input your solution here
     }
 
     //todo Task 4
     public void addTwoNumbers(){
-        // input your solution here
+    Scanner scan = new Scanner(System.in);
+    int value1 = scan.nextInt();
+    int value2 = scan.nextInt();
+        System.out.println(value1 + value2);// input your solution here
     }
 
     //todo Task 5
