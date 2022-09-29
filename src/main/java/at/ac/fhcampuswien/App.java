@@ -28,6 +28,15 @@ public class App {
     public void sumOfLiterals(){
      int a = 0xface;
      int b = 'Z';
+     int c = 012;
+     long d = 80L;
+     float e = 44e-1f;
+     float f = 5.5f;
+     double g = 8.88e1;
+     double h = 99.9;
+     int sum = (int) (a + b + c + d + e + f + g + h);
+        System.out.println(sum);
+
      // input your solution here
     }
 
