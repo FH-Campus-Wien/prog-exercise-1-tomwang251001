@@ -12,16 +12,15 @@ public class App {
     //todo Task 2
     public void helloRobot(){
         System.out.println("0123456789012345678901");
-        System.out.println();
         System.out.println("         __");
         System.out.println(" _(\\    |@@|");
         System.out.println("(__/\\__ \\--/ __");
         System.out.println("   \\___|----|  |   __");
-        System.out.println("       \\ }{ /\\ )_ / _\\ ");
-        System.out.println("       /\\__/\\ \\__0 (__");
+        System.out.println("       \\ }{ /\\ )_ / _\\");
+        System.out.println("       /\\__/\\ \\__O (__");
         System.out.println("      (--/\\--)    \\__/");
         System.out.println("      _)(  )(_");
-        System.out.println("     `___''___`");// input your solution here
+        System.out.println("     `---''---`");// input your solution here
     }
 
     //todo Task 3
@@ -79,8 +78,26 @@ public class App {
 
     //todo Task 9
     public void leapyear(){
-        // input your solution here
+     Scanner scan = new Scanner(System.in);
+        System.out.print("Year: ");
+        int year = scan.nextInt();
+        if (year % 400 == 0)
+            System.out.println("Leapyear");
+        else {
+            if (year % 100 == 0)
+                System.out.println("Not a Leapyear");
+            else {
+              if (year % 4 == 0)
+                  System.out.println("Leapyear");
+              else {
+                  System.out.println("Not a Leapyear");
+              }
+            }
+        }
     }
+
+        // input your solution here
+
 
     //todo Task 10
     public void transposedNumbers(){
