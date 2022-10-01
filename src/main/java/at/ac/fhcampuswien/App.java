@@ -28,11 +28,11 @@ public class App {
      int a = 0xface;
      int b = 'Z';
      int c = 012;
-     int d = 80;
-     int e = (int) 44e-1f;
-     int f = (int) 5.5f;
-     int g = (int) 8.88e1;
-     int h = (int) 99.9;
+     long d = 80L;
+     float e = (int) 44e-1f;
+     float f = (int) 5.5f;
+     double g = (int) 8.88e1;
+     double h = (int) 99.9;
      int sum = (int) (a + b + c + d + e + f + g + h);
         System.out.println(sum);
 
@@ -49,16 +49,37 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
-        // input your solution here
+
+      Scanner scan = new Scanner(System.in);
+
+        System.out.println("Before Swap:");
+        System.out.print("x: ");
+        int value1 = scan.nextInt();
+        System.out.print("y: ");
+        int value2 = scan.nextInt();
+
+        System.out.println("After Swap:");
+        if (value1 != value2) {
+            System.out.println("x: " + value2);
+            System.out.println("y: " + value1);
+        } else {
+            System.out.println("x: " + value1);
+        System.out.println("y: " + value2);
+        }
+
+            // input your solution here
     }
 
     //todo Task 6
     public void compareTwoNumbers(){
+
      Scanner scan = new Scanner(System.in);
+
         System.out.print("n1: ");
      int n1 = scan.nextInt();
         System.out.print("n2: ");
      int n2 = scan.nextInt();
+
      if (n1 < n2)
      System.out.println("n2 > n1");
      else if (n1 > n2)
@@ -87,7 +108,23 @@ Scanner scan = new Scanner(System.in);
 
     //todo Task 8
     public void getCommissionRate(){
-        // input your solution here
+
+       Scanner scan = new Scanner(System.in);
+
+        System.out.print("Enter CommissionClass: ");
+        int value = scan.nextInt();
+        double r = value * 0.01;
+        switch (value) {
+            case 1: case 2: case 3: case 4:
+                System.out.println("Your Commission Rate was set to " + r);
+                break;
+            default:
+                System.out.println("Your Commission Rate was set to 0.0");
+
+
+        }
+
+       // input your solution here
     }
 
     //todo Task 9
