@@ -25,6 +25,8 @@ public class App {
 
     //todo Task 3
     public void sumOfLiterals(){
+
+      // define variables
      int a = 0xface;
      int b = 'Z';
      int c = 012;
@@ -34,6 +36,8 @@ public class App {
      double g = (int) 8.88e1;
      double h = (int) 99.9;
      int sum = (int) (a + b + c + d + e + f + g + h);
+
+     // report result
         System.out.println(sum);
 
      // input your solution here
@@ -41,9 +45,14 @@ public class App {
 
     //todo Task 4
     public void addTwoNumbers(){
+
     Scanner scan = new Scanner(System.in);
+
+    // assign scanner to variables
     int value1 = scan.nextInt();
     int value2 = scan.nextInt();
+
+    // report result
         System.out.println(value1 + value2);// input your solution here
     }
 
@@ -52,12 +61,14 @@ public class App {
 
       Scanner scan = new Scanner(System.in);
 
+      // get values
         System.out.println("Before Swap:");
         System.out.print("x: ");
         int value1 = scan.nextInt();
         System.out.print("y: ");
         int value2 = scan.nextInt();
 
+        // swap values
         System.out.println("After Swap:");
         if (value1 != value2) {
             System.out.println("x: " + value2);
@@ -75,11 +86,13 @@ public class App {
 
      Scanner scan = new Scanner(System.in);
 
+     // get values
         System.out.print("n1: ");
      int n1 = scan.nextInt();
         System.out.print("n2: ");
      int n2 = scan.nextInt();
 
+     // compare with if else branch
      if (n1 < n2)
      System.out.println("n2 > n1");
      else if (n1 > n2)
@@ -89,9 +102,14 @@ public class App {
 
     //todo Task 7
     public void ratingSalesPerson(){
+
 Scanner scan = new Scanner(System.in);
+
+// ask for and get value
         System.out.print("Enter annual Revenue: ");
         int rev = scan.nextInt();
+
+        // if else branch
         if (rev < 0 | rev >= 100_000)
             System.out.println("Invalid Revenue");
         else if (0 <= rev & rev < 20_000)
@@ -111,9 +129,14 @@ Scanner scan = new Scanner(System.in);
 
        Scanner scan = new Scanner(System.in);
 
+       // ask for and get value
         System.out.print("Enter CommissionClass: ");
         int value = scan.nextInt();
+
+        // define r
         double r = value * 0.01;
+
+
         switch (value) {
             case 1: case 2: case 3: case 4:
                 System.out.println("Your Commission Rate was set to " + r);
@@ -129,9 +152,14 @@ Scanner scan = new Scanner(System.in);
 
     //todo Task 9
     public void leapyear(){
+
      Scanner scan = new Scanner(System.in);
+
+     // ask for value
         System.out.print("Year: ");
         int year = scan.nextInt();
+
+        // check formulas with if else
         if (year % 400 == 0)
             System.out.println("Leapyear");
         else {
@@ -152,7 +180,29 @@ Scanner scan = new Scanner(System.in);
 
     //todo Task 10
     public void transposedNumbers(){
-        // input your solution here
+
+        Scanner scan = new Scanner(System.in);
+
+        // get value
+        System.out.print("Number: ");
+        int value = scan.nextInt();
+
+        if (value > 999) {
+            System.out.println("Too long!");
+        }
+        else if (value < 100) {
+            String digit = String.valueOf(value % 10);
+            String digit2 = String.valueOf(value / 10 % 10);
+
+            System.out.println(digit + digit2);
+        }
+        else {
+            String digit = String.valueOf(value % 10);
+            String digit2 = String.valueOf(value / 10 % 10);
+            String digit3 = String.valueOf(value / 100 % 10);
+
+            System.out.println(digit + digit2 + digit3);
+        }// input your solution here
     }
 
 
